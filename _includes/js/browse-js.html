@@ -913,6 +913,9 @@ window.addEventListener('load', function() {
     
     // Set up event handlers
     setupEventHandlers();
+
+    // Renders a selection list
+    renderSelectionList();
 });
 
 /**
@@ -1054,6 +1057,64 @@ function setupEventHandlers() {
                 updateAdvancedSearchModal([{boolean: 'AND', field: field, value: query}]);
             }
         });
+    }
+
+    // Initialize selection from localStorage
+    let selectedItems = JSON.parse(localStorage.getItem('browseSelections')) || [];
+
+    function toggleSelection(id, btn) {
+        const itemTitle = btn.getAttribute('data-title');
+        const index = selectedItems.findIndex(item => item.id === id);
+
+    if (index === -1) {
+        // Add to list
+        selectedItems.push({ id: id, title: itemTitle });
+        btn.classList.replace('btn-outline-primary', 'btn-success');
+        btn.innerText = 'Selected ✓';
+    } else {
+        // Remove from list
+        selectedItems.splice(index, 1);
+        btn.classList.replace('btn-success', 'btn-outline-primary');
+        btn.innerText = 'Select';
+    }
+
+    localStorage.setItem('browseSelections', JSON.stringify(selectedItems));
+    renderSelectionList();
+    }
+
+    function renderSelectionList() {
+        const listContainer = document.getElementById('selectionListDisplay');
+        if (!listContainer) return;
+
+        if (selectedItems.length === 0) {
+            listContainer.innerHTML = '<p class="text-muted">No items selected.</p>';
+            return;
+        }
+
+        let html = '<ul class="list-group mb-3">';
+        selectedItems.forEach(item => {
+            html += `<li class="list-group-item d-flex justify-content-between align-items-center">
+                    ${item.title}
+                    <button class="btn btn-sm btn-danger" onclick="removeFromList('${item.id}')">×</button>
+                 </li>`;
+        });
+        html += '</ul><button class="btn btn-sm btn-link text-danger" onclick="clearAllSelections()">Clear All</button>';
+        listContainer.innerHTML = html;
+    }
+
+    function removeFromList(id) {
+        selectedItems = selectedItems.filter(item => item.id !== id);
+        localStorage.setItem('browseSelections', JSON.stringify(selectedItems));
+        // Re-render items to reset button states
+        const query = document.querySelector('#filterTextBox').value;
+        filterItems(items, query); 
+        renderSelectionList();
+    }
+
+    function clearAllSelections() {
+        selectedItems = [];
+        localStorage.removeItem('browseSelections');
+        location.reload(); // Reset all button UI states
     }
 }
 </script>
