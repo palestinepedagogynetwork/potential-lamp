@@ -18,23 +18,3 @@ permalink: /
         </p>
     </div>
       
-  <div class="row">
-
-    <div class="col-md-8">
-      {% include index/carousel.html title="Sample Items" %}
-    </div>
-
-    <div class="col-md-4">
-      {% include index/time.html %}
-      {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
-      {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-    </div>
-
-    <div class="col-md-12 mt-4">
-      {% include index/data-download.html %}
-    </div>
-
-  </div>
-
-</div>
-
