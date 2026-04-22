@@ -44,7 +44,18 @@ const dateFields = ['date', 'created', 'published', 'modified', 'issued', 'date_
 var loadingIcon, filterTextBox, browseItemsDiv;
 
 // Initialize selection from localStorage for timeline selection
-let selectedItems = JSON.parse(localStorage.getItem('browseSelections')) || [];
+// Safely load selected items
+var selectedItems = [];
+try {
+    const stored = localStorage.getItem('browseSelections');
+    if (stored) {
+        selectedItems = JSON.parse(stored);
+        if (!Array.isArray(selectedItems)) selectedItems = [];
+    }
+} catch(e) {
+    console.error("Error parsing saved items", e);
+    selectedItems = [];
+}
 
 {% include helpers/get-icon.js %}
 
@@ -100,23 +111,33 @@ function makeCard(obj) {
         const mediaIcon = getIcon(obj.display_template, obj.format, "hidden");
         card += `<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ page.url | relative_url }}#display_template:${encodeURIComponent(obj.display_template)}">${obj.display_template.toUpperCase().replace("_"," ")} ${mediaIcon}</a></small></p>`;
     }
-
-    // Inside makeCard(obj) function, near the end:
-    card += `<hr>
-        <div class="d-flex justify-content-between align-items-center">
-            <a href="${itemHref}" class="btn btn-sm btn-light" title="link to ${obj.title}">View Full Record</a>
-            <button class="btn btn-sm btn-outline-primary select-item-btn" 
-                data-id="${obj.id}" 
-                data-title="${obj.title.replace(/"/g, '&quot;')}" 
-                onclick="toggleSelection('${obj.id}', this)">
-                Select
-            </button>
-        </div>
-    </div></div></div>`;
     
+    // --- SELECTION LOGIC & BUTTON ---
+    let isSelected = false;
+    if (typeof selectedItems !== 'undefined' && Array.isArray(selectedItems)) {
+        isSelected = selectedItems.some(i => i.id === obj.id);
+    }
+    
+    const btnClass = isSelected ? 'btn-success' : 'btn-outline-primary';
+    const btnText = isSelected ? 'Selected ✓' : 'Select';
+    
+    // Safely escape quotes in the title so it doesn't break the HTML attribute
+    const safeTitle = obj.title ? obj.title.replace(/"/g, '&quot;').replace(/'/g, '\\\'') : 'Item';
+
+    card += `<hr>
+    <div class="d-flex justify-content-between align-items-center pb-3 px-3">
+        <a href="${itemHref}" class="btn btn-sm btn-light" title="link to ${obj.title}">View Full Record</a>
+        <button class="btn btn-sm ${btnClass} select-item-btn" 
+                data-id="${obj.id}" 
+                data-title="${safeTitle}" 
+                onclick="window.toggleSelection('${obj.id}', this)">
+            ${btnText}
+        </button>
+    </div>
+    </div></div></div>`; // Closes card-body, card, and item wrapper
+
     return card;
 }
-
 // =============================================================================
 // DATE UTILITIES
 // =============================================================================
@@ -1062,6 +1083,9 @@ function setupEventHandlers() {
         });
     }
 
+    // ========================================
+    // TIMELINE HANDLING
+    // ========================================
     window.toggleSelection = function(id, btn) {
         const itemTitle = btn.getAttribute('data-title');
         const index = selectedItems.findIndex(item => item.id === id);
