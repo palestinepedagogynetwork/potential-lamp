@@ -24,8 +24,7 @@ permalink: /
   </p>   
   
   <div class="row">
-
-    <div class="col-md-6 mb-4">
+  <div class="col-md-6 mb-4">
       <div class="card h-100">
         <img src="{{ '/assets/img/heritage.jpg' | relative_url }}" class="card-img-top" alt="Heritage, Belonging, and Belief">
         <div class="card-body">
@@ -39,3 +38,20 @@ permalink: /
         </div>
       </div>
     </div>
+
+   <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="{{ '/assets/img/music.jpg' | relative_url }}" class="card-img-top" alt="Music, Dance, and Literature">
+        <div class="card-body">
+          <h5 class="card-title">Music, Dance, and Literature</h5>
+          <p class="card-text">
+            This collection examines how music, dance, and literature shape public memory of Palestine.
+          </p>
+          <a href="{{ '/collections/musicdanceliterature.html' | relative_url }}" class="btn btn-primary">
+            View Collection
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
