@@ -19,10 +19,10 @@ permalink: /
           <p class="card-text">
             This collection explores how heritage, belonging, identity, and belief shape Palestinian life and memory.
           </p>
-          <a href="{{ '/collections/heritagebelongingbelief.html' | relative_url }}" class="btn btn-primary">
+          <a href="{{ '/collections/heritagebelongingbelief.html#intro-video' | relative_url }}" class="btn btn-primary">
             View Collection
           </a>
-          <a href="#heritage-video" class="btn btn-outline-secondary btn-sm mt-2">
+          <a href="{{ '/collections/heritagebelongingbelief.html#intro-video' | relative_url }}" class="btn btn-outline-secondary btn-sm mt-2">
             Watch intro video
           </a>
         </div>
@@ -40,6 +40,9 @@ permalink: /
           <a href="{{ '/collections/musicdanceliterature.html' | relative_url }}" class="btn btn-primary">
             View Collection
           </a>
+          <a href="{{ '/collections/musicdanceliterature.html#intro-video' | relative_url }}" class="btn btn-outline-secondary btn-sm mt-2">
+            Watch intro video
+          </a>
         </div>
       </div>
     </div>
@@ -55,6 +58,9 @@ permalink: /
           <a href="{{ '/collections/spacearchitectureenvironment.html' | relative_url }}" class="btn btn-primary">
             View Collection
           </a>
+          <a href="{{ '/collections/spacearchitectureenvironment.html#intro-video' | relative_url }}" class="btn btn-outline-secondary btn-sm mt-2">
+            Watch intro video
+          </a>
         </div>
       </div>
     </div>
@@ -69,6 +75,9 @@ permalink: /
           </p>
           <a href="{{ '/collections/warviolencedisplacement.html' | relative_url }}" class="btn btn-primary">
             View Collection
+          </a>
+          <a href="{{ '/collections/warviolencedisplacement.html#intro-video' | relative_url }}" class="btn btn-outline-secondary btn-sm mt-2">
+            Watch intro video
           </a>
         </div>
       </div>
