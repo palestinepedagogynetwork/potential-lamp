@@ -11,7 +11,7 @@ permalink: /clusters/
 
     <!-- Cluster 1 -->
     <div class="col-md-4 mb-4">
-      <a href="{{ '/clusters/naming_atrocity.html' | relative_url }}" class="text-decoration-none text-dark">
+      <a href="{{ '/clusters/naming-atrocity.html' | relative_url }}" class="text-decoration-none text-dark">
         <div class="card h-100">
           <img src="/assets/img/cluster1.jpg" class="card-img-top">
           <div class="card-body">
