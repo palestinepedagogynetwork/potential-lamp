@@ -1,10 +1,15 @@
 ---
-title: Music, Dance, and Literature.md
+title: Music, Dance, and Literature
 layout: page
 permalink: /collections/musicdanceliterature.html
 ---
 
 # Music, Dance, and Literature
+
+<div class="container my-4">
+<div class="row justify-content-center">
+<div class="col-lg-9">
+
 <img src="{{ '/assets/img/music.jpg' | relative_url }}" alt="Music, Dance, and Literature" style="max-width:80%; margin-bottom: 1rem;">
 
 ## Introduction Video
@@ -25,3 +30,9 @@ Although most sources represented in the collection are textual (book chapters a
 Many of the sources also explore how cultural memory is preserved, transformed, and transmitted across diasporic spaces. For example, Louis Brehony’s study of Reem Kelani shows how childhood habits like “za’tar, zeit, Fairuz” become anchors of identity in Kuwait. On the other hand, Ana‑Laura Rodriguez‑Quiñones highlights  contemporary dance in the West Bank situates artistic practice within transnational networks, showing how dancers negotiate belonging across borders. Furthermore, interviews such as Nader Jalal’s emphasize the preservation of pre‑1948 musical heritage, and digital humanities projects like Refqa Abu‑Remaileh’s map fragmented literary histories. These capture how everyday rituals, artistic expression, and archival work sustain connections to Palestinian culture even as displacement reshapes their form. 
 
 ## Sources
+
+
+
+</div>
+</div>
+</div>
