@@ -4,12 +4,11 @@ layout: page
 permalink: /collections/musicdanceliterature.html
 ---
 
-# Music, Dance, and Literature
-
 <div class="container my-4">
 <div class="row justify-content-center">
 <div class="col-lg-9">
 
+# Music, Dance, and Literature
 <img src="{{ '/assets/img/music.jpg' | relative_url }}" alt="Music, Dance, and Literature" style="max-width:80%; margin-bottom: 1rem;">
 
 ## Introduction Video
