@@ -12,7 +12,6 @@ permalink: /collections/musicdanceliterature.html
 <img src="{{ '/assets/img/music.jpg' | relative_url }}" alt="Music, Dance, and Literature" style="max-width:80%; margin-bottom: 1rem;">
 
 ## Introduction Video
-
 <div style="width:100%; height:400px; background:#f5f5f5; display:flex; align-items:center; justify-content:center; border:2px dashed #ccc; margin-bottom:1.5rem;">
   <p style="color:#777; font-size:1.2rem;"> Video coming soon</p>
 </div>
