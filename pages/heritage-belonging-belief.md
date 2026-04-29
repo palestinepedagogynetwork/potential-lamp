@@ -4,6 +4,10 @@ layout: page
 permalink: /collections/heritagebelongingbelief.html
 ---
 
+<div class="container my-4">
+<div class="row justify-content-center">
+<div class="col-lg-9">
+
 # Heritage, Belonging, and Belief
 <img src="{{ '/assets/img/heritage.jpg' | relative_url }}" alt="Heritage, Belonging, and Belief" style="max-width:80%; margin-bottom: 1rem;">
 
@@ -21,3 +25,9 @@ Most of the sources included are  journal articles that examine how heritage is 
 Many of the sources explore Palestinian identity and heritage in diaspora communities and other contexts of displacement. These include Palestinian communities living in refugee camps, as well as Palestinians who immigrated, by force or by choice, to countries such as Australia and Chile. Several sources also examine the role of the digital world and new technologies in propagating Palestinian heritage and identity. These works explore how displaced communities build “postspatial” identities, held together by memory and connection rather than physical territory. Drawing largely on ethnographic interviews and conversations with displaced people and diaspora members, these works show how Palestinians weave their attachment to their homeland into the lives they build in new communities, through everything from food and family ritual to digital archives. Other sources highlight Palestinian women and queer communities as figures of resilience and resistance, with particular attention to women, who have long served as custodians of cultural knowledge, ritual tradition, and craft.
 
 ## Sources
+
+
+
+</div>
+</div>
+</div>

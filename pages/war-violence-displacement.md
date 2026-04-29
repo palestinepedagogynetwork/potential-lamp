@@ -4,6 +4,10 @@ layout: page
 permalink: /collections/warviolencedisplacement.html
 ---
 
+<div class="container my-4">
+<div class="row justify-content-center">
+<div class="col-lg-9">
+
 # War, Violence, and Displacement
 <img src="{{ '/assets/img/war.jpg' | relative_url }}" alt="War, Violence, and Displacement" style="max-width:80%; margin-bottom: 1rem;">
 
@@ -24,3 +28,9 @@ The third key theme revolves around how violent historical events are represente
 The final theme centers on policy and international law, documenting both the historical policies that contributed to the Palestine conflict and the responses from the international community to the ongoing (2023-2026) genocide in Gaza. These sources recognize that the conflict in Palestine is motivated in part by historical and current policy decisions as well as the perception and actions (or inaction) of the international community. They also highlight what multiple international NGOs have identified as the inadequacy of current international law in addressing the conflict and holding those responsible accountable.
 
 ## Sources
+
+
+
+</div>
+</div>
+</div>

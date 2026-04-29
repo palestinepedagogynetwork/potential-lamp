@@ -4,6 +4,10 @@ layout: page
 permalink: /collections/spacearchitectureenvironment.html
 ---
 
+<div class="container my-4">
+<div class="row justify-content-center">
+<div class="col-lg-9">
+
 # Space, Architecture, and Environment
 <img src="{{ '/assets/img/space.jpg' | relative_url }}" alt="Space, Architecture, and Environment" style="max-width:80%; margin-bottom: 1rem;">
 
@@ -29,3 +33,9 @@ Third, the collection explores the relationship between space, landscape, identi
 Together, these works serve as an initial framework for understanding how Palestinian space is created, regulated, and contested. The collection will be meaningful for anyone curious about the intersections of environment, infrastructure, and spatial politics in the Middle East, particularly through the lens of settler-colonial power dynamics.
 
 ## Sources
+
+
+
+</div>
+</div>
+</div>
