@@ -17,7 +17,7 @@ permalink: /
         <div class="card-body">
           <h5 class="card-title">Heritage, Belonging, and Belief</h5>
           <p class="card-text">
-            This collection explores how heritage, belonging, identity, and belief shape Palestinian life and memory.
+            This collection explores how Palestinians preserve their identity across generations and displacement through cultural transmission, highlighting resilience, continuity, and community through diverse forms of media and lived experiences.
           </p>
           <a href="{{ '/collections/heritagebelongingbelief.html#intro-video' | relative_url }}" class="btn btn-primary">
             View Collection
@@ -35,7 +35,7 @@ permalink: /
         <div class="card-body">
           <h5 class="card-title">Music, Dance, and Literature</h5>
           <p class="card-text">
-            This collection examines how music, dance, and literature shape public memory of Palestine.
+            This collection examines how Palestinian identity and cultural memory are sustained across displacement through music, dance, performance, and literature, highlighting artistic expression as a dynamic form of resistance, continuity, and transnational connection.
           </p>
           <a href="{{ '/collections/musicdanceliterature.html' | relative_url }}" class="btn btn-primary">
             View Collection
@@ -53,7 +53,7 @@ permalink: /
         <div class="card-body">
           <h5 class="card-title">Space, Architecture, and Environment</h5>
           <p class="card-text">
-            This collection focuses on Space, Architecture, and Environment.
+            This collection explores how infrastructure, environmental policy, and spatial design as tools of political control in Palestine, shaping access to land, resources, and identity, revealing the deep connections between space and power
           </p>
           <a href="{{ '/collections/spacearchitectureenvironment.html' | relative_url }}" class="btn btn-primary">
             View Collection
@@ -71,7 +71,7 @@ permalink: /
         <div class="card-body">
           <h5 class="card-title">War, Violence, and Displacement</h5>
           <p class="card-text">
-            This collection focuses on War, Violence, and Displacement.
+            This collection examines how Palestinians experience, remember, and represent violence and displacement across generations, highlighting the power they have in shaping mental health, historical memory, media narratives, and policy.
           </p>
           <a href="{{ '/collections/warviolencedisplacement.html' | relative_url }}" class="btn btn-primary">
             View Collection
