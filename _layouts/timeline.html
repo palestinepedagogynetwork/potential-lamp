@@ -3,7 +3,7 @@
 layout: page
 custom-foot: js/timeline-js.html
 ---
-{%- assign field = site.data.theme.timeline-field | default: page.timeline-field | default: "date" -%}
+{%- assign field = site.data.theme.timeline-field | default: page.timeline-field | default: "year_created" -%}
 {% if site.data.theme.timeline-child-objects == true %}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 {% else %}
