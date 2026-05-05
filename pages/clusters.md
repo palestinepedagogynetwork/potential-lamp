@@ -53,7 +53,7 @@ We feature a variety of subjects in our clusters, from early STEM education to h
 
     <!-- Cluster 4 -->
     <div class="col-md-4 mb-4">
-      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+      <a href="/clusters/pinkwashing.html/" class="text-decoration-none text-dark">
         <div class="card h-100">
           <img src="/assets/img/cluster4.jpg" class="card-img-top">
           <div class="card-body">
@@ -65,7 +65,7 @@ We feature a variety of subjects in our clusters, from early STEM education to h
 
     <!-- Cluster 5 -->
     <div class="col-md-4 mb-4">
-      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+      <a href="/clusters/stem-education.html/" class="text-decoration-none text-dark">
         <div class="card h-100">
           <img src="/assets/img/cluster5.jpg" class="card-img-top">
           <div class="card-body">
