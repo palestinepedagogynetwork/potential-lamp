@@ -35,7 +35,7 @@ permalink: /clusters/
 
     <!-- Cluster 3 -->
     <div class="col-md-4 mb-4">
-      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+      <a href="/clusters/care-ethics/" class="text-decoration-none text-dark">
         <div class="card h-100">
           <img src="/assets/img/cluster3.jpg" class="card-img-top">
           <div class="card-body">
