@@ -7,6 +7,12 @@ permalink: /clusters/
 <div class="container my-5">
   <h1 class="mb-4">Clusters</h1>
 
+These pedagogical clusters are small sets of resources designed for teachers to use to guide a class session’s worth of instruction with a particular focus. On each pedagogical cluster’s page, you will find a motivating pedagogical goal and a starting set of discussion questions with a proposed in-class activity provided for select clusters. Each source in the cluster will be available here.
+
+We feature a variety of subjects in our clusters, from early STEM education to healthcare. These clusters are linked below and can also be accessed from the sidebar on the homepage.
+
+
+
   <div class="row">
 
     <!-- Cluster 1 -->
