@@ -17,7 +17,13 @@ The 1948 Genocide Conventions, a response to the horrors of the Holocaust, attem
 4. 	What are the similarities and differences between each of the three genocide definitions (UN, Lemkin, and LeVine)? What is the rationale behind their differences? How can different definitions of the term impact real-world events?
 
 ## In-class Activity
-In-class Activity
+Here are some additional sources to supplement discussion that students can explore in class as a collective:
+1. 	(40 second video detailing Shelly’s exchange with Elsner in 1994)[https://www.youtube.com/watch?v=CBfRWq0Sbhs]
+2. 	Recent developments: (USA joins Israel in defending against South Africa claims of genocide)[https://www.commondreams.org/news/icj-us-israel]
+In-class discussion: What do you think the term “genocide” should mean? What aspects of Lemkin’s and/or the UN’s definition do you agree or disagree with, and why?
+        	This lends itself very well into in a class word-map, where students can put phrases/concept that they believe constitute the definition of genocide.
+Additional question: What do you think the definition of genocide should be?
+In-class discussion two: Amnesty International and other international organizations has concluded that Israel is conducting genocide in Gaza (https://www.amnesty.org/en/latest/news/2024/12/amnesty-international-concludes-israel-is-committing-genocide-against-palestinians-in-gaza/). What response has this elicits from the public and national government? How do you feel about this (i.e. is their definition accurate? Do you believe them?). How does this change international discourse on the Israel-Palestine conflict?
 
 
 ## Accessibility Statement
