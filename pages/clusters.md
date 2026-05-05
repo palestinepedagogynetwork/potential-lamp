@@ -23,7 +23,7 @@ permalink: /clusters/
 
     <!-- Cluster 2 -->
     <div class="col-md-4 mb-4">
-      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+      <a href="{{ '/clusters/surveillance-control.html' | relative_url }}" class="text-decoration-none text-dark">
         <div class="card h-100">
           <img src="/assets/img/cluster2.jpg" class="card-img-top">
           <div class="card-body">
@@ -37,7 +37,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster3.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Care & Ethics</h5>
           </div>
@@ -49,7 +49,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster4.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Queer Palestinians and Pinkwashing</h5>
           </div>
@@ -61,7 +61,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster5.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">STEM Education</h5>
           </div>
@@ -73,7 +73,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster6.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Violence from Above</h5>
           </div>
@@ -85,7 +85,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster7.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Framing the Past</h5>
           </div>
@@ -97,7 +97,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster8.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Creation of Queer Self-Identity</h5>
           </div>
@@ -109,7 +109,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster9.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Who's Watching?</h5>
           </div>
@@ -121,7 +121,7 @@ permalink: /clusters/
     <div class="col-md-4 mb-4">
       <a href="/clusters/trauma/" class="text-decoration-none text-dark">
         <div class="card h-100">
-          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <img src="/assets/img/cluster10.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Palestinian Trauma</h5>
           </div>
