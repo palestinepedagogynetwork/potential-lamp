@@ -52,7 +52,25 @@ permalink: /collections/spacearchitectureenvironment.html
       </p>
 
       <h2>Sources</h2>
-
+      <div class="row">
+      {% for item in site.data.cluster-collection-metadata %}
+      {% if item["Assigned Collection"] == "Space, Architecture, and Environment" %}
+      <div class="col-md-4 mb-4">
+      <div class="card h-100">
+      <div class="card-body">
+      <h5 class="card-title">{{ item.Title }}</h5>
+        <p><strong>Creator:</strong> {{ item["Creator/Author"] }}</p>
+        <p><strong>Type:</strong> {{ item["Item Type"] }}</p>
+        <p><strong>Year:</strong> {{ item["Year Published"] }}</p>
+        <a href="{{ '/items/' | append: item.objectid | append: '.html' | relative_url }}" 
+            class="btn btn-primary">
+          View Source
+        </a>
+        </div>
+        </div>
+        </div>
+      {% endif %}
+    {% endfor %}
     </div>
   </div>
 </div>
