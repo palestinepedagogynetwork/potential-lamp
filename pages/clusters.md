@@ -33,6 +33,114 @@ permalink: /clusters/
       </a>
     </div>
 
+    <!-- Cluster 3 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 4 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 5 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 6 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 7 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 8 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 8 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 9 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Cluster 10 -->
+    <div class="col-md-4 mb-4">
+      <a href="/clusters/trauma/" class="text-decoration-none text-dark">
+        <div class="card h-100">
+          <img src="/assets/img/cluster2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cluster 2</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
     <!-- Add more clusters -->
 
   </div>
