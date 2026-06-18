@@ -5,6 +5,8 @@ custom-foot: js/browse-js.html
 ---
 {%- assign fields = site.data.config-browse -%}
 
+
+
 <!-- advanced search button-->
 <div class="row mb-2">
     <div class="col-7 col-lg-9">{{ content }}</div>
@@ -12,8 +14,20 @@ custom-foot: js/browse-js.html
         advanced-search-modal.html %}{% endif %}</div>
 </div>
 
+<h2>Refine your search</h2>
+{% include feature/accordion.html title1="Filters" text1=Academic Discipline title2="Keyword" text2=example2 title3="Date" text3=example3 %}
 
 <div class="row mb-3 justify-content-center">
+    <div class="dropdown-menu">
+        <button class="dropdown-item" type="button" data-field="all">All Fields</button>
+                        <button class="dropdown-item" type="button" data-field="title">Title</button>
+                        {% for f in fields %}
+                        {% assign cap-field = f.field | capitalize %}
+                        <button class="dropdown-item" type="button" data-field="{{ f.field }}">{{ f.facet_name |
+                            default: f.display_name | default: cap-field }}</button>
+    </div>
+    
+
     <!--leftmost filter "all fields"-->
     <div class="col-lg-8 text-center">
         <form role="search" id="browseFilter" onsubmit="submitFilter(); return false;">
