@@ -13,18 +13,6 @@ custom-foot: js/browse-js.html
 </div>
 
 <div class="row mb-3 justify-content-center">
-    <div class="col-lg-3 text-start">
-        <div class="dropdown-menu">
-            <button class="dropdown-item" type="button" data-field="all">Academic Discipline</button>
-            {% for s in <subjects-keywords> %}
-            {% assign keyword = s.subjects-keywords| capitalize %}
-            <button class="dropdown-item" type="button" data-field="{{ s.subjects-keywords }}">{{ s.subject-keywords}}</button>
-            {% endfor %}
-        </div>
-    </div>
-
-
-<div class="row mb-3 justify-content-center">
     <!--leftmost filter "all fields"-->
     <div class="col-lg-8 text-center">
         <form role="search" id="browseFilter" onsubmit="submitFilter(); return false;">
@@ -115,7 +103,18 @@ custom-foot: js/browse-js.html
     </div>
 </div>
 
-
+<div class="row mb-3 justify-content-center">
+    <div class="col-lg-3 text-start">
+        <div class="dropdown-menu">
+            <button class="dropdown-item" type="button" data-field="all">Academic Discipline</button>
+            {% for s in <subjects-keywords> %}
+                {% assign keyword = s.subjects-keywords| capitalize %}
+                <button class="dropdown-item" type="button" data-field="{{ s.subjects-keywords }}">{{
+                    s.subject-keywords}}</button>
+                {% endfor %}
+        </div>
+    </div>
+</div>
 
 <div id="loadingIcon" class="text-center">
     <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
