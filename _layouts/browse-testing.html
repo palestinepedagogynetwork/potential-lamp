@@ -26,6 +26,7 @@ custom-foot: js/browse-js.html
                     <option value="" disabled>─────────────</option>
                     <option value="advanced">Advanced Search...</option>{% endif %}
                 </select>
+                
                 <!-- Mobile filter button - shows only on small screens -->
                 <div class="{% if site.data.theme.faceted-search == true %}dropdown d-lg-none{% else %}d-none{% endif %}">
                     <button class="py-3 btn btn-outline-secondary" type="button" id="mobileFilterButton" data-bs-toggle="dropdown" aria-expanded="false" title="Filter options">
@@ -57,11 +58,15 @@ custom-foot: js/browse-js.html
                         <input type="text" id="endDate" class="me-2 form-control" placeholder="End Date">
                     </div>
                 </div>
-                <!-- possible browse via keywords etc-->
+                   <!-- possible browse via keywords etc-->
                 
-                    {% for s in subjects% }
-                        <button class="btn btn-secondary">{{k.subjects}}</button>
-                    {% endfor %}
+                <div class="dropdown">
+                    <div class="dropdown-menu keyword-menu">
+                    <button class="dropdown-item keyword-item" data-filter="">All</button>
+                    {% assign keywords = site.data.config-browse | where_exp: 'i','i.subject !=nil' %}
+                    {% for s in subjects %}
+                    <button class="dropdown-item keyword-item" data-filter="{{ s.subject }}">{{s.subject }}</button>
+                </div> 
                 
                 
                 <button class="btn btn-success" type="submit" title="Filter items" id="filterButton" >Search</button>
