@@ -86,9 +86,9 @@ custom-foot: js/browse-js.html
                     class="dropdown-item browse-sort-item {% if site.data.theme.default-sort-field == '' %}active{% endif %}"
                     data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
-                {% assign sort_options = site.data.config-browse | where_exp: 'i','i.sort_name != nil' %}
-                {% for o in sort_options %}
-                <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{{ o.sort_name
+                {% assign subjects = site.data.config-browse | where_exp: 'i','i.field == subject' %}
+                {% for o in subjects %}
+                <button class="dropdown-item browse-sort-item" data-filter="{{ o.subject | escape }}">{{ o.subject
                     }}</button>
                 {% endfor %}
             </div>
@@ -104,10 +104,3 @@ custom-foot: js/browse-js.html
 </div>
 
 <div class="row" id="browseItems"></div>
-
-<div>
-    <!--{% assign keywords = site.data.config-browse | where_exp: 'i', 'i.subject !=nil' %}-->
-    {% for k in keywords %}
-    - {{k.subject}}
-    {% endfor %}
-</div>
