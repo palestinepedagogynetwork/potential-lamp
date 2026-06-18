@@ -4,6 +4,10 @@ layout: page
 custom-foot: js/browse-js.html
 ---
 {%- assign fields = site.data.config-browse -%}
+{%- assign metas = site.data.config-metadata -%}
+{% for m in metas%}
+- {{m.subject}}
+{%endfor%}
 
 <div class="row mb-2">
     <div class="col-7 col-lg-9">{{ content }}</div>
@@ -86,9 +90,9 @@ custom-foot: js/browse-js.html
                     class="dropdown-item browse-sort-item {% if site.data.theme.default-sort-field == '' %}active{% endif %}"
                     data-filter="random">Random</button>
                 <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
-                {% assign subjects = site.data.config-browse | where_exp: 'i','i.field == subject' %}
-                {% for o in subjects %}
-                <button class="dropdown-item browse-sort-item" data-filter="{{ o.subject | escape }}">{{ o.subject
+                {% assign sort_options = site.data.config-browse | where_exp: 'i','i.sort_name != nil' %}
+                {% for o in sort_options %}
+                <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{{ o.sort_name
                     }}</button>
                 {% endfor %}
             </div>
@@ -98,6 +102,8 @@ custom-foot: js/browse-js.html
 
     </div>
 </div>
+
+
 
 <div id="loadingIcon" class="text-center">
     <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
