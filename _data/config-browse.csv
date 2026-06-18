@@ -1,5 +1,5 @@
 field,display_name,btn,hidden,sort_name,facet_name
-subject, Keywords,,,Keywords,Keywords
+subject, Keywords,true,,Keywords,Keywords
 academic_discipline, Discipline,,,Discipline,Discipline
 date,Date,,,Date Created
 description,,,true,
