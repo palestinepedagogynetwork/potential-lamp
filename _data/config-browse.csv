@@ -1,10 +1,10 @@
 field,display_name,btn,hidden,sort_name,facet_name
+subject, Keywords,,,Keywords,Keywords
+academic_discipline, Discipline,,,Discipline,Discipline
 date,Date,,,Date Created
 description,,,true,
 creator,Creator,,,
-subject,,true
 location,,true,,,Location Depicted
 identifier,,,true,Identifier
-subject, Keywords,,,Keywords,Keywords
-academic_discipline, Discipline,,,Discipline,Discipline
+
 
