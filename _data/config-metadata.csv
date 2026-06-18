@@ -3,14 +3,14 @@ title,Title,,,DCTERMS.title,headline
 creator,Creator,,,DCTERMS.creator,creator
 date,Date Created,,,DCTERMS.date,dateCreated
 description,Description,,,DCTERMS.description,description
-subject,Subjects,true,,DCTERMS.subject,keywords
+subject,Keywords,true,,DCTERMS.subject,keywords
 location,Location,,,,contentLocation
 latitude,Latitude,,,,
 longitude,Longitude,,,,
 source,Source,,,,
 year_created, Year Created,,,,
 journal_title, Journal Title,,,,
-academic_discipline, Academic Discipline,,,,
+academic_discipline, Academic Discipline,true,,,
 author_origin, Author Origin,,,,
 publication_lat, Publication Latitude,,,,
 publication_long, Publication Longitude,,,,
