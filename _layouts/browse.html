@@ -106,8 +106,8 @@ custom-foot: js/browse-js.html
 <div class="row" id="browseItems"></div>
 
 <div>
-    {%assign keywords = site.data.config-browse | where_exp: 'i', 'i.subject !=nil' %}
-    {%for k in keywords %}
+    <!--{% assign keywords = site.data.config-browse | where_exp: 'i', 'i.subject !=nil' %}-->
+    {% for k in keywords %}
     - {{k.subject}}
     {% endfor %}
 </div>
