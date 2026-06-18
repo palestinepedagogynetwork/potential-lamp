@@ -5,4 +5,6 @@ creator,Creator,,,
 subject,,true
 location,,true,,,Location Depicted
 identifier,,,true,Identifier
-keyword,Keyword
+subject, Keywords,,,Keywords,Keywords
+academic_discipline, Discipline,,,Discipline,Discipline
+
