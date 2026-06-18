@@ -6,7 +6,7 @@ custom-foot: js/browse-js.html
 {%- assign fields = site.data.config-browse -%}
 {%- assign metas = site.data.config-metadata -%}
 {% for m in metas%}
-- {{m.subject}}
+- <p>{{m.subject}}</p>
 {%endfor%}
 
 <div class="row mb-2">
