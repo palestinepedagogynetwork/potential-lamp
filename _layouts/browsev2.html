@@ -19,7 +19,7 @@ custom-foot: js/browse-js.html
 <div class="row mb-3 justify-content-center">
     <div class="col-lg-3 text-start">
         <div class="dropdown-menu">
-            <button class="dropdown-item" type="button" data-field="all">Acadmic Discipline</button>
+            <button class="dropdown-item" type="button" data-field="all">Academic Discipline</button>
             {% for s in <subjects-keywords> %}
             {% assign keyword = s.subjects-keywords| capitalize %}
             <button class="dropdown-item" type="button" data-field="{{ s.subjects-keywords }}">{{ s.subject-keywords}}</button>
@@ -28,7 +28,7 @@ custom-foot: js/browse-js.html
     </div>
 
 
-    <!--leftmost filter "all fields"-->
+    <!--leftmost filter "all fields"
     <div class="col-lg-8 text-center">
         <form role="search" id="browseFilter" onsubmit="submitFilter(); return false;">
             <div class="input-group input-group-lg">
@@ -46,9 +46,9 @@ custom-foot: js/browse-js.html
                     {% if site.data.theme.advanced-search == true %}
                     <option value="" disabled>─────────────</option>
                     <option value="advanced">Advanced Search...</option>{% endif %}
-                </select>
+                </select>-->
                 <!-- Mobile filter button - shows only on small screens -->
-                <div
+                <!--<div
                     class="{% if site.data.theme.faceted-search == true %}dropdown d-lg-none{% else %}d-none{% endif %}">
                     <button class="py-3 btn btn-outline-secondary" type="button" id="mobileFilterButton"
                         data-bs-toggle="dropdown" aria-expanded="false" title="Filter options">
@@ -73,12 +73,12 @@ custom-foot: js/browse-js.html
                         <button class="dropdown-item" type="button" data-field="advanced">Advanced Search...</button>
                         {% endif %}
                     </div>
-                </div>{% endif %}
-                <!-- search bar-->
+                </div>{% endif %}-->
+                <!-- search bar
                 <input type="text" class="form-control" id="filterTextBox" placeholder="Search ... "
-                    aria-label="Search">
+                    aria-label="Search">-->
                 <!-- Update the date range inputs section -->
-                <div id="dateRangeInputs" class="date-range-inputs">
+              <!--  <div id="dateRangeInputs" class="date-range-inputs">
                     <div class="date-input-group">
                         <input type="text" id="startDate" class="ms-2 form-control" placeholder="Start Date">
                         <span class="date-separator">to</span>
@@ -89,9 +89,9 @@ custom-foot: js/browse-js.html
                 <button class="btn btn-outline-secondary filter d-none d-lg-flex" onclick="resetFilter(); return false;"
                     data-filter="">Reset</button>
             </div>
-        </form>
+        </form>-->
         <!-- Active filter indicators -->
-        <div id="activeFilters" class="mt-2 text-start"></div>
+       <!-- <div id="activeFilters" class="mt-2 text-start"></div>
         <div class="h2" id="numberOf"></div>
     </div>
     <div class="col-lg-2">
@@ -116,9 +116,7 @@ custom-foot: js/browse-js.html
         </div>
 
     </div>
-</div>
-
-
+</div>-->
 
 <div id="loadingIcon" class="text-center">
     <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
