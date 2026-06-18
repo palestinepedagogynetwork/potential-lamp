@@ -4,10 +4,11 @@ layout: page
 custom-foot: js/browse-js.html
 ---
 {%- assign fields = site.data.config-browse -%}
-{%- assign metas = site.data.config-metadata -%}
-{% for m in metas%}
-- <p>{{m.subject}}</p>
-{%endfor%}
+
+{&- assign metas = test-metadata -%}
+{% for m in metas% }
+{& assign keywords = metas.subject%}
+{{keywords}}
 
 <div class="row mb-2">
     <div class="col-7 col-lg-9">{{ content }}</div>
