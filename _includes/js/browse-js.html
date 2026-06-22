@@ -310,6 +310,12 @@ function filterItems(arr, query, field = "all", startDate = "", endDate = "") {
     loadingIcon.classList.add("d-none");
 }
 
+function buttonFilter(query,field) {
+    let filteredItems=arr;
+    filteredItems = arr.filter(item => itemMatches(item, field, query, startDate, endDate));
+    updateDisplay(filteredItems)
+}
+
 /**
  * Advanced filter - handles multiple search criteria with boolean logic
  */
@@ -447,10 +453,6 @@ function submitFilter() {
     return false;
 }
 
-function buttonSearch(field, query) {
-    const hash = field === "all" ? query : `${field}:${query}`;
-        window.location.hash = encodeURIComponent(hash);
-}
 
 
 /**
