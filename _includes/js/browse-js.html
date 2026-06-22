@@ -311,7 +311,7 @@ function filterItems(arr, query, field = "all", startDate = "", endDate = "") {
 }
 
 function buttonFilter(query,field) {
-    let filteredItems=arr;
+    let items=arr;
     filteredItems = arr.filter(item => itemMatches(item, field, query, startDate, endDate));
     updateDisplay(filteredItems)
 }
