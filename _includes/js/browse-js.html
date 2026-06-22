@@ -447,6 +447,12 @@ function submitFilter() {
     return false;
 }
 
+function buttonSearch(field, query) {
+    const hash = field === "all" ? query : `${field}:${query}`;
+        window.location.hash = encodeURIComponent(hash);
+}
+
+
 /**
  * Reset all filters and return to base URL
  */
