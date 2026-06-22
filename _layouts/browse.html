@@ -105,20 +105,7 @@ custom-foot: js/browse-js.html
     </div>
 </div>
 
-<div class="col-lg-3">
-    <p>Sort by...</p>
-    <div class="dropdown">
-        <button class="btn dropdown-toggle">
-            Academic Discipline
-        </button>
 
-        <div class="dropdown-menu browse-sort-menu">
-            {% assign disciplines = items | where_exp 'item', 'item.academic_discipline != nil' %}
-            {% for d in disciplines %}
-            <button class="dropdown-item browse-sort-item" data-filter="{{ d.academic_discipline}}">{{d.academic_discipline}}</button>
-            {% endfor %}
-        </div>
-    </div>
 
     <button onclick="buttonFilter('anthropology','academic_discipline')">Anthropology</button>
 
