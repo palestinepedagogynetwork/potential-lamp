@@ -115,9 +115,9 @@ custom-foot: js/browse-js.html
 
         <div class="dropdown-menu browse-sort-menu">
             {% assign disciplines = items | where_exp 'item', 'item.academic_discipline != nil' %}
-            {$ for d in disciplines %}
+            {% for d in disciplines %}
             <button class="dropdown-item browse-sort-item" data-filter="{{ d.academic_discipline}}">{{d.academic_discipline}}</button>
-            {%endfor%}
+            {% endfor %}
         </div>
     </div>
 
