@@ -4,6 +4,7 @@ layout: page
 custom-foot: js/browse-js.html
 ---
 {%- assign fields = site.data.config-browse -%}
+{%- assign filters = site.data.config-metadata -%}
 
 <!-- advanced search button-->
 <div class="row mb-2">
@@ -59,11 +60,9 @@ custom-foot: js/browse-js.html
                         {% endif %}
                     </div>
                 </div>{% endif %}
-
                 <!-- search bar-->
                 <input type="text" class="form-control" id="filterTextBox" placeholder="Search ... "
                     aria-label="Search">
-
                 <!-- Update the date range inputs section -->
                 <div id="dateRangeInputs" class="date-range-inputs">
                     <div class="date-input-group">
@@ -78,11 +77,29 @@ custom-foot: js/browse-js.html
             </div>
         </form>
 
+        <!--dropdowns for filters-->
+        <div class="row mb-3 justify-content-center">
+            <div class="col-lg-3 text-start">
+                <div class="dropdown">
+                    <button class="btn" type="button" onclick="filterItems(,anthropology,academic_discipline,,)">
+                        Academic Discipline
+                    </button>
+                </div>
+                <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
+                    {% for k in filters %}
+                    {% assign keyword = k.filters| capitalize %}
+                    <button class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton" type="button"
+                        data-field="{{ s.subjects-keywords }}">{{
+                        s.subject-keywords}}</button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
             <!-- Active filter indicators -->
             <div id="activeFilters" class="mt-2 text-start"></div>
             <div class="h2" id="numberOf"></div>
         </div>
-
         <div class="col-lg-2">
             <div class="dropdown">
                 <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton"
@@ -105,26 +122,6 @@ custom-foot: js/browse-js.html
             </div>
 
         </div>
-
-        <!--dropdowns for filters-->
-        <div class="row mb-3 justify-content-center">
-            <div class="col-lg-3 text-start">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="false">
-                        Academic Discipline
-                    </button>
-                </div>
-               
-                <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
-                    
-                    
-                    <button class="dropdown-menu browse-sort-menu" onclick="filterItems(, academic_discipline, anthropology,,)">Anthropology</button>
-                  
-                </div>
-                
-            </div>
-        </div>
-
     </div>
 </div>
 
