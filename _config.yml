@@ -36,6 +36,7 @@ author: CollectionBuilder
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
 
 metadata: PPN_Repository_not_a_test_07-15-26
+
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # page_gen:
