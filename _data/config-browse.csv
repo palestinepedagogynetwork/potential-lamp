@@ -10,6 +10,6 @@ latitude,,,true,,
 longitude,,,true,,
 author_origin,,,true,,
 language, Language,false,false,Language,Language
-identifier,,,true,Identifier
+identifier,,,false,Identifier
 
 
