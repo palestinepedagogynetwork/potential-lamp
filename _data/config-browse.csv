@@ -4,5 +4,12 @@ academic_discipline, Discipline,true,,Discipline,Discipline
 date,Date,,,Date Created
 description,,,true,
 creator,Creator,,,
-location,,true,,,Location Depicted
+object_location,,true,,,Location Depicted
+item_type, Item Type,,Item Type,Item Type
+latitude,,,true,,
+longitude,,,true,,
+author_origin,,,true,,
+language, Language,false,false,Language,Language
 identifier,,,true,Identifier
+
+
