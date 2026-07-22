@@ -29,8 +29,9 @@
                 {% if item.parentid %}"parent": {{ item.parentid | jsonify }}, {%- endif -%}
                 "title": {{ item.title | escape | jsonify }},
                 "id": {{ item.objectid | jsonify }} 
-            } }{% unless forloop.last %}, {% endunless %}{% endfor %}
+            } }{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
             ]};
+         
 
     /* check for url parameters and setup initial view options */ 
     let url = new URL(window.location);
