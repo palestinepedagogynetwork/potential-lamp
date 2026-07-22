@@ -30,7 +30,6 @@
                 "title": {{ item.title | escape | jsonify }},
                 "id": {{ item.objectid | jsonify }} 
             } }{% unless forloop.last %}, {% endunless %}{% endfor %}
-            {% endif %}
             ]};
          
 
